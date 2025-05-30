@@ -1,43 +1,43 @@
 # CRUD API Generator
 
-MySQL/MariaDB veritabanları için otomatik CRUD API oluşturucu.
+Automatic CRUD API generator for MySQL/MariaDB databases.
 
-## Özellikler
+## Features
 
-- MySQL/MariaDB veritabanı desteği
-- Otomatik tablo keşfi
-- RESTful API endpoint'leri
-- CRUD operasyonları
-- Güvenlik ve kimlik doğrulama
-- Hata yönetimi
-- API dokümantasyonu
-- Docker desteği
+- MySQL/MariaDB database support
+- Automatic table discovery
+- RESTful API endpoints
+- CRUD operations
+- Security and authentication
+- Error handling
+- API documentation
+- Docker support
 
-## Gereksinimler
+## Requirements
 
-- PHP 8.1 veya üzeri
-- MySQL 8.0 veya üzeri
+- PHP 8.1 or higher
+- MySQL 8.0 or higher
 - Composer
-- Docker ve Docker Compose (opsiyonel)
+- Docker and Docker Compose (optional)
 
-## Kurulum
+## Installation
 
-### Composer ile Kurulum
+### Installation via Composer
 
 ```bash
 composer require crud-api-generator/crud-api-generator
 ```
 
-### Docker ile Kurulum
+### Installation via Docker
 
 ```bash
-git clone https://github.com/crud-api-generator/crud-api-generator.git
+git clone https://github.com/dogushan.balci/crud-api-generator.git
 cd crud-api-generator
 cp .env.example .env
 docker-compose up -d
 ```
 
-## Kullanım
+## Usage
 
 ```php
 use CRUDAPIGenerator\Core\APIGenerator;
@@ -53,48 +53,46 @@ $api = new APIGenerator($config);
 $api->generate();
 ```
 
-## API Endpoint'leri
+## API Endpoints
 
-- `GET /api/{table}` - Tüm kayıtları listele
-- `GET /api/{table}/{id}` - Tek bir kaydı getir
-- `POST /api/{table}` - Yeni kayıt oluştur
-- `PUT /api/{table}/{id}` - Kayıt güncelle
-- `DELETE /api/{table}/{id}` - Kayıt sil
+- `GET /api/{table}` - List all records
+- `GET /api/{table}/{id}` - Get a single record
+- `POST /api/{table}` - Create a new record
+- `PUT /api/{table}/{id}` - Update a record
+- `DELETE /api/{table}/{id}` - Delete a record
 
-## Güvenlik
+## Security
 
-- API Key kimlik doğrulaması
-- CORS koruması
+- API Key authentication
+- CORS protection
 - Rate limiting
-- SQL injection koruması
-- XSS koruması
+- SQL injection protection
+- XSS protection
 
-## Test
+## Testing
 
 ```bash
 composer test
 ```
 
-## Kod Kalitesi
+## Code Quality
 
 ```bash
 composer check
 ```
 
-## Lisans
+## License
 
 MIT
 
-## Katkıda Bulunma
+## Contributing
 
-1. Fork yapın
-2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
-3. Değişikliklerinizi commit edin (`git commit -m 'feat: add amazing feature'`)
-4. Branch'inizi push edin (`git push origin feature/amazing-feature`)
-5. Pull Request oluşturun
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'feat: add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-## İletişim
+## Contact
 
-Doğuşhan Balcı - [@dogushanbalci](https://twitter.com/dogushanbalci) - dogushanbalci@gmail.com
-
-Proje Linki: [https://github.com/dogushanbalci/crud-api-generator](https://github.com/dogushanbalci/crud-api-generator) 
+https://dogushanbalci.com 
