@@ -95,4 +95,4 @@ MIT
 
 ## Contact
 
-https://dogushanbalci.com 
+Doğuşhan BALCI - https://dogushanbalci.com 
