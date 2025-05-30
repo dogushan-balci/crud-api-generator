@@ -1,12 +1,13 @@
 {
     "name": "crud-api-generator/crud-api-generator",
-    "description": "Otomatik CRUD API oluşturucu",
+    "description": "Automatic CRUD API generator for MySQL/MariaDB databases",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "Doğuşhan Balcı",
-            "email": "dogushanbalci@gmail.com"
+            "email": "dogushanbalci@gmail.com",
+            "homepage": "https://dogushanbalci.com"
         }
     ],
     "require": {
